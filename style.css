@@ -89,7 +89,63 @@ header{color: #fff;}
 .col h3{ font: 600 2.4rem "Fira Sans"; padding: 24px 0 10px 0;}
 .col p{font: 1.6rem "Fira Sans";}
 
+section{
+    color: #fff;
+    padding: 80px 10px;
+}
+section:first-child,
+section:nth-child(2){background-color: #3B322D;}
+section:last-child{background-color: #251D1A;}
 
+section h2{
+    font: bold 4.8rem "Fira Sans";
+    text-align: center;
+} 
+
+section  .head-p{
+    font: 1.5rem "Fira Sans";
+    text-align: center;
+    padding: 24px 0 60px 0;
+} 
+
+#l1{background: url(img/barber1.png) center/cover;}
+#l2{background: url(img/barber2.png) center/cover;}
+#l3{background: url(img/barber3.png) center/cover;}
+
+#r1{background: url(img/siccors1.png) center/cover;}
+#r2{background: url(img/knife.png) center/cover;}
+#r3{background: url(img/barber5.png) center/cover;}
+
+
+#grid-r div,
+#grid-l div{
+    height: 50vh;
+    margin: 10px 0;
+}
+
+section:nth-child(2) .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card{max-width:280px ;}
+
+
+.card h6{
+    font: bold 1.4rem "Fira Sans";
+    padding-top: 24px;
+}
+.card p{
+    font: 1.6rem/1.5 "Fira Sans";
+    text-align: left;
+    padding: 24px 0;
+}
+.card a{
+    font: 1.4rem "Fira Sans";
+    color: #FF6E40;
+}
     
 
 
@@ -142,6 +198,47 @@ header{color: #fff;}
         flex-direction: row;
         justify-content: space-between;
         padding: 70px 10px;
+    }
+
+    #grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+    }
+
+    #grid-r div,
+    #grid-l div{
+    height: initial;
+    margin: initial;
+    }
+
+    #grid-l{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 337px 280px;
+        gap: 20px;
+    }
+
+    #grid-r{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 280px 337px;
+        gap: 20px;
+    }
+    
+
+    #l1{grid-area: 1 / 1 / 2 / 3 ;}
+    #r3{grid-area: 2 / 1 / 3 / 3 ;}
+    
+
+    section:nth-child(2) .cards{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    section:nth-child(2) .cards img{
+        width: 100%;
     }
 
 }
