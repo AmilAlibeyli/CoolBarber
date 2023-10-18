@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,900;1,700&display=swap');
+
+/* Reset CSS */
+
 *{
     padding: 0;
     margin: 0;
@@ -8,27 +11,320 @@
 ul{list-style: none;}
 a{ text-decoration: none;}
 
-nav{
-    text-align: center;
+html{
+    font-size: 7px;
+}
+
+/* Header */
+
+header{
     color: #fff;
-    font: 1em "Fira Sans";
-    padding:20px 10px 0 10px;
+    /* padding: 10px; */
+}
+#top{
+    height: 500px;
+    background-color: #3B322D;
+
+}
+
+.container{
+    max-width: 1180px;
+    margin: 10px;
+    background-color: orange;
+    margin: auto;
+}
+
+ nav{
+    text-align: center;
+    font: 1.5rem "Fira Sans";
+    padding: 1vw 0;
+
+   
 }
 
 #logo{width: 150px;}
+
+
+
+#menu li a{
+    color: #fff;
+
+}
+
+#adress,
+#num{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding-top: 5px;
+}
+
+
+
+#num p:first-child{
+    font-size: 1.8rem;
+}
+
+
+
+#num img, #adress img{
+    width: 20px;
+    margin-left: 1vw ;
+}
+
+#header-bg{
+    height: 90vh;
+    background: url(./img/bg.jpg) center/cover;
+    position: relative;
+    font-family: "Playfair Display";
+    text-align: center;
+    padding: 80px 0 0 0px;
+
+    
+    
+    
+}
+
+#bottom{
+    height: 670px;
+    background-color: #251D1A;
+    }
+
+    
+    #header-bg h1{
+        font: 900  4.5rem "Playfair Display";
+        margin: auto;
+       
+        /* background-color: red; */
+    }
+    
+  
+    #header-bg #btn1{
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 10px 25px;
+        font: 1.4rem "Playfair Display";
+        margin-bottom: 29px;
+        margin-top: 20px;
+    }
+
+    #header-bg p{
+        font: 1.8rem "Fira Sans";
+        margin: auto;
+    }
+
+    #header-bg #btn2{
+        font: 2rem "Playfair Display";
+        color: #fff;
+        padding: 15px 30px;
+        background-color: #FF6E40;
+        border: 0;
+    }
+
+    #butbox{
+        width: 100%;
+        position: absolute;
+        bottom: 60px;
+    }
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+    
+    html{
+        font-size: 0.65vw;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #logo{
+        width: initial;
+        padding-top: 5px;
+        margin-right: 0.9vw;
+        /* background-color: red; */
+    } 
+
+    #adress{
+        margin: 0 1.5vw 0 1.4vw;
+    }
+
+    #num{
+        margin-left: 1.4vw;
+    }
+
+    #num img, #adress img{
+        width: initial;
+    }
+
+    #menu{
+        display: flex;
+        margin-right: 0.85vw;
+        text-align: center;
+    }
+
+    #menu li{
+        margin: 0 0.3vw;
+    }
+
+    #menu li a{
+        padding: 1vw;
+    }
+
+    #menu li a:first-child{margin-left: 0;} 
+    #menu li a:last-child{margin-right: 0;}
+
+    #menu li a:hover{
+       background-color: #FF6E40;
+    }
+    #header-bg{
+        display: flex;
+        
+    }
+
+   #header-bg h1{
+        font-size: 7rem;
+        margin: initial;
+        padding-right: 50px;
+        padding-left: 60px;
+        line-height: 1.2;
+    }
+
+    #header-bg {
+        text-align: initial;
+    }
+
+    /* #btn2{
+        position: absolute;
+       left: 60px;
+       bottom: 10px;
+    } */
+
+       #butbox{
+        /* position: absolute; */
+        width:initial;
+       left: 60px;
+       /* bottom: 10px; */
+    }
+
+
+   
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav{
+    text-align: center;
+    color: #fff;
+    font: 0.9em "Fira Sans";
+    padding:20px 0 0 0px;
+}
+
 #menu{padding-bottom: 20px;}
-#top{height: 670px; background-color: #3b322d;}
 #bottom{height: 770px; background-color: #251D1A;}
 .container{max-width: 1180px; margin: auto;}
 #adress,
 #num{
     display: flex;
     justify-content: center;
-    padding: 5px 0;
+    padding: 0.3vw 0;
 }
 
-#adress p{font-size: .85em; margin-right:15px ;}
-#num p{ margin-right: 15px;}
+#adress p{font-size: .8em; margin-right:0.9vw;}
+#num p{ margin-right: 0.9vw; white-space: nowrap;}
 
 #menu li a{
     display: inline-block;
@@ -36,10 +332,96 @@ nav{
     color: #fff;
 }
 
+#header-bg{
+    width: 100%;
+    height: 1000px;
+    background: url(img/bg.jpg);
+    position: relative;
+    top: 30px;
+    color: #fff;
+    padding-top:30px ;
+    text-align: center;
+}
 
-@media only screen and (min-width: 768px) {
-    #logo{width: initial;}
-  }
+#hedaer-bg-top{
+    display: flex;
+    justify-content: center;
+}
+
+#header-bg h1{
+   font: 900 2em "Playfair Display";
+   max-width: 56%;
+   margin: auto;
+}
+
+ #btn1{
+   font: bold .8em "Playfair Display";
+   border: 1px solid #EFE7E2;
+   background-color: transparent;
+   color: #fff;
+   padding: 10px 25px;
+   margin: 15px 0;
+}
+
+#header-bg p{
+   font: 1.1em "Fira Sans";
+   max-width: 25%;
+   margin: auto;
+} 
+
+
+#btn2{
+    background-color: #FF6E40;
+    border: 0;
+    padding: 25px 51px;
+    color: #fff;
+}
+
+#butbox{
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+
+}
+
+
+
+
+
+
+    #logo{width: initial; padding: 0.3vw 1.9vw 0 0; }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1vw;
+    }
+
+
+    #menu{
+        display: flex;
+        justify-content: center;
+        padding: initial;        
+    }
+
+
+    #menu li:hover {
+        background: #FF6E40;
+
+    }
+
+    #menu li {padding: 0.9vw; margin: 0 0.3vw;}
+    #adress {margin:0 0.4vw 0 1.4vw ;}
+
+    #header-bg h1{
+        font-size: 4.4em;
+        max-width: 671px;
+    }
+  } */
+
+
+
+
 
 
 
