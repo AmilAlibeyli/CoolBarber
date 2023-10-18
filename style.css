@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Playfair+Display:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;900&display=swap');
 /* Reset CSS */
 
 *{
@@ -48,7 +48,7 @@ header{color: #fff;}
     position: relative;
     font-family: "Playfair Display";
     text-align: center;
- padding: 80px 0 0 0px;
+    padding: 80px 0 0 0px;
 }
 
 #bottom{height: 900px;background-color: #251D1A;}
@@ -89,18 +89,13 @@ header{color: #fff;}
 .col h3{ font: 600 2.4rem "Fira Sans"; padding: 24px 0 10px 0;}
 .col p{font: 1.6rem "Fira Sans";}
 
-section{
-    color: #fff;
-    padding: 80px 10px;
-}
+/* Main */
+
+section{color: #fff; padding: 80px 10px;}
 section:first-child,
 section:nth-child(2){background-color: #3B322D;}
 section:last-child{background-color: #251D1A;}
-
-section h2{
-    font: bold 4.8rem "Fira Sans";
-    text-align: center;
-} 
+section h2{font: bold 4.8rem "Fira Sans"; text-align: center;} 
 
 section  .head-p{
     font: 1.5rem "Fira Sans";
@@ -116,14 +111,36 @@ section  .head-p{
 #r2{background: url(img/knife.png) center/cover;}
 #r3{background: url(img/barber5.png) center/cover;}
 
-
 #grid-r div,
-#grid-l div{
-    height: 50vh;
-    margin: 10px 0;
+#grid-l div{height: 50vh; margin: 10px 0;}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
 }
 
-section:nth-child(2) .cards{
+#button1{
+    font: bold 2rem "Playfair Display";
+    color: #fff;
+    background-color: #FF6E40;
+    padding: 15px 30px;
+    border: 0; 
+    margin-bottom: 20px;
+}
+
+#button2{
+    font: bold 1.4rem "Playfair Display";
+    color: #fff;
+    background-color: transparent;
+    padding: 17px 30px;
+    border: 1px solid #fff;
+}
+
+#button2:hover{background-color: #FF6E40;}
+section:nth-child(2) .cards,
+section:last-child .cards{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,21 +148,35 @@ section:nth-child(2) .cards{
 }
 
 .card{max-width:280px ;}
-
-
-.card h6{
-    font: bold 1.4rem "Fira Sans";
-    padding-top: 24px;
-}
+.card h6{font: bold 1.4rem "Fira Sans"; padding-top: 24px;}
 .card p{
     font: 1.6rem/1.5 "Fira Sans";
     text-align: left;
     padding: 24px 0;
 }
-.card a{
-    font: 1.4rem "Fira Sans";
-    color: #FF6E40;
+
+.card a{font: 1.4rem "Fira Sans"; color: #FF6E40;}
+section:nth-child(2) .card,
+section:last-child .card{padding: 15px 0;}
+
+
+section:last-child .cards .card h3{
+    font: 500 3rem "Fira Sans";
+    text-align: left;
+    padding: 20px 0;
 }
+
+section:last-child .cards .card ul{border-right: 2px solid #fff;}
+
+section:last-child .cards .card ul li{
+    font: 1.6rem "Fira Sans";
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 14px;
+}
+
+
     
 
 
@@ -207,10 +238,7 @@ section:nth-child(2) .cards{
     }
 
     #grid-r div,
-    #grid-l div{
-    height: initial;
-    margin: initial;
-    }
+    #grid-l div{height: initial; margin: initial;}
 
     #grid-l{
         display: grid;
@@ -226,20 +254,26 @@ section:nth-child(2) .cards{
         gap: 20px;
     }
     
-
     #l1{grid-area: 1 / 1 / 2 / 3 ;}
     #r3{grid-area: 2 / 1 / 3 / 3 ;}
     
+    #buttons{
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 30px;
+    }
 
-    section:nth-child(2) .cards{
+    #button1{margin-bottom: initial;}
+
+    section:nth-child(2) .cards,
+    section:last-child .cards{
         flex-direction: row;
         justify-content: space-between;
         gap: 15px;
     }
 
-    section:nth-child(2) .cards img{
-        width: 100%;
-    }
+    section:nth-child(2) .cards img,
+    section:last-child .cards img{width: 100%;}
 
 }
 
