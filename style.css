@@ -139,6 +139,7 @@ section  .head-p{
     background-color: transparent;
     padding: 17px 30px;
     border: 1px solid #fff;
+    transition-duration:1s ;
 }
 
 #button2:hover{background-color: #FF6E40;}
@@ -261,7 +262,7 @@ color: #fff;
 #forum-content h5{
     font: 2.1rem "Fira Sans";
     color: #3B322D;
-    padding: 12px 0 4px 0;
+    padding: 12px 0 24px 0;
     text-align: center;
     
 }
@@ -287,6 +288,12 @@ input::placeholder{color: #fff;}
     padding: 10px 20px 10px 20px;
     color: #fff;
     margin-top: 20px;
+    transition: 1s;
+}
+
+#forum-i button:hover{
+    background-color: white;
+    color: #000;
 }
 
 #form-check-label{
