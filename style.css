@@ -148,7 +148,6 @@ section:last-child .cards{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .card{max-width:280px ;}
@@ -277,10 +276,7 @@ color: #fff;
     width: 100%;
 }
 
-#forum-i input:first-child{
-    margin-bottom: 10px;
-}
-
+#forum-i input:first-child{margin-bottom: 10px;}
 input::placeholder{color: #fff;}
 #forum-i button{
     border: 1px solid #000;
@@ -291,10 +287,7 @@ input::placeholder{color: #fff;}
     transition: 1s;
 }
 
-#forum-i button:hover{
-    background-color: white;
-    color: #000;
-}
+#forum-i button:hover{background-color: white;color: #000;}
 
 #form-check-label{
     font: 1.4rem "Fira Sans";
@@ -310,9 +303,7 @@ input::placeholder{color: #fff;}
     align-items: flex-start;
 }
 
-#contact-div{
-    width: 100%;
-}
+#contact-div{width: 100%;}
 
 
 
@@ -415,23 +406,11 @@ input::placeholder{color: #fff;}
 
     section:nth-child(2) .cards img,
     section:last-child .cards img{width: 100%;}
-    #forum-i{
-        display: initial;
-    }
+    #forum-i{display: initial;}
 
-    #contact .container{
-        /* display: initial; */
-        justify-content: start;
-        padding: 60px 0 0 10px ;
-    }
-
-    #contact-div{
-        max-width: 480px;
-    }
-
-    #forum-i input{
-        width: initial;
-    }
+    #contact .container{justify-content: start; padding: 60px 0 0 10px ;}
+    #contact-div{max-width: 480px;}
+    #forum-i input{width: initial;}
 
 }
 
